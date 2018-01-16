@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :cuisines, only: [:index, :show]
   resources :recipes, only: [:index, :show]
+
+
 end
