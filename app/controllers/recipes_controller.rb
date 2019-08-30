@@ -2,9 +2,7 @@ class RecipesController < ApplicationController
 
   def index
     @get_term = params[:search]
-      if @get_term == nil
-        @recipes == []
-      elsif @get_term.empty?
+      if @get_term.blank?
         @recipes == []
       else
         @recipes = Recipe.for(@get_term)
